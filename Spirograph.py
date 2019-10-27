@@ -5,7 +5,7 @@ import shapes
 t = turtle
 
 print("Welcome to Spirograph. Please keep both windows open")
-choice = input("Choose a type of spirograph: circle, star, square or randomstar/circle/square ")
+choice = input("Choose a type of spirograph: circle, star, square, triangle or randomstar/circle/square/triangle ")
 
 if choice == "star":
     forward = input("Give a number ")
@@ -84,4 +84,35 @@ if choice == "randomsquare":
             t.color(colours)
             shapes.square(int(size))
             t.left(int(rotate))
+
+if choice == "triangle":
+    size = input("Give me a number ")
+    rotate = input("Give another number ")
+    colour = input("Give a colour ")
+
+    while True:
+        t.speed(100)
+        t.hideturtle()
+        t.color(str(colour))
+        shapes.triangle(int(size))
+        t.left(int(rotate))
+
+if choice == "randomtriangle":
+    size = randint(50, 200)
+    rotate = randint(10, 100)
+    print(size, rotate)
+
+    while True:
+        for colours in ["red", "orange", "yellow", "green", "blue", "purple", "pink"]:
+            t.bgcolor("black")
+            t.hideturtle()
+            t.speed(100)
+            t.color(colours)
+            shapes.triangle(int(size))
+            t.left(int(rotate))
+
+
+
+
+    
 
