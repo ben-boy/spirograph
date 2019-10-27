@@ -4,8 +4,7 @@ from random import randint
 import shapes
 t = turtle
 
-print("Welcome to Spirograph. Please keep both windows open")
-choice = input("Choose a type of spirograph: circle, star, square, triangle or randomstar/circle/square/triangle ")
+choice = input("Welcome to Spirograph. Please enter a command ")
 
 if choice == "star":
     forward = input("Give a number ")

@@ -1,0 +1,6 @@
+COMMANDS:
+  -star: Generates star spirograph
+  -circle: Generates star spirograph
+  -square: Generates square spirograph
+  -triangle: Generates triangle spirograph
+  -random: A prefix that can be added to the front of other commands to randomize the generation (eg: randomcircle)
